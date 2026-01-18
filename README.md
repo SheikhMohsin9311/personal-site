@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Website
 
-## Getting Started
+This is my personal website, built to showcase my work at the intersection of Computer Science, Business Analytics, and public policy.
 
-First, run the development server:
+## Overview
+
+The site is designed with a focus on clarity and minimal distraction. It serves as a central place for my writing, professional experience, and contact information. The aesthetic leans toward a dark, focused interface with subtle animations that don't interfere with readability.
+
+## Technical Stack
+
+The site is built using Next.js with TypeScript and styled using a combination of Tailwind CSS and custom CSS. The choice of Next.js allows for straightforward routing and good performance out of the box, while the styling approach keeps things simple and maintainable.
+
+## Structure
+
+The site consists of four main sections:
+
+- **Home**: A brief introduction to my interests and current work
+- **About**: More context on my academic background and areas of focus
+- **Experience**: Professional and academic experience, including projects and skills
+- **Writing**: Articles and thoughts on technology, policy, and applied research
+
+## Design Philosophy
+
+The design prioritizes readability and content over visual complexity. Times New Roman was chosen for its classic, academic feel. The dark theme with purple and pink accents creates visual interest without being distracting. Animations are used sparingly to provide feedback on interactive elements rather than for decoration.
+
+## Setup
+
+To run this locally:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The site will be available at `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Most styling is contained in `globals.css`. The color scheme uses CSS custom properties and can be adjusted there. Page content is in standard Next.js page components under the `app` directory.
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This is a standard Next.js application and can be deployed to Vercel, Netlify, or any platform that supports Next.js.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+If you have questions about the site or want to discuss similar projects, feel free to reach out via the contact page.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with a focus on substance over style, though a bit of style doesn't hurt.
