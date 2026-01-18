@@ -4,48 +4,57 @@ export default function About() {
       <h1>About</h1>
 
       <p>
-        I'm currently pursuing a degree in Computer Science and Business Analytics 
-        at FLAME University in Pune, where I'm developing a foundation in both 
-        technical and analytical thinking.
+        I'm currently a sophomore pursuing Computer Science and Business Analytics 
+        at FLAME University in Pune, where I'm on a merit-based full ride scholarship. 
+        My academic journey combines technical depth with interdisciplinary breadth—taking 
+        coursework in Philosophy and Public Policy alongside core computer science.
       </p>
 
       <p>
-        My academic work focuses on the practical application of computational 
-        methods to real-world challenges. I'm particularly interested in how 
-        data analysis and systems design can be used to address inefficiencies 
-        in public infrastructure, policy implementation, and organizational processes.
+        Beyond the classroom, I'm a writer and researcher interested in driving 
+        positive change wherever I can. I believe in the power of ideas and their 
+        practical application to make meaningful differences in people's lives.
       </p>
 
-      <h2>Areas of Interest</h2>
+      <h2>What Drives Me</h2>
 
       <p>
-        I'm drawn to projects that sit at the intersection of technology and 
-        societal impact. This includes exploring how algorithmic thinking can 
-        improve government service delivery, how data can inform evidence-based 
-        policy decisions, and how systems thinking can reveal hidden patterns 
-        in complex organizational structures.
-      </p>
-
-      <p>
-        Beyond the classroom, I spend time reading about economics, public policy, 
-        and the history of technology. I believe that understanding context and 
-        constraints is just as important as technical skill when working on 
-        meaningful problems.
-      </p>
-
-      <h2>Current Focus</h2>
-
-      <p>
-        Right now, I'm developing my skills in statistical analysis, algorithm 
-        design, and data visualization. I'm also learning to communicate technical 
-        concepts clearly to non-technical audiences—a skill I consider essential 
-        for anyone working at the intersection of technology and policy.
+        I'm drawn to work where technology meets real-world problems. My interests 
+        lie in understanding how data, processes, and algorithms can reduce 
+        inefficiencies, enhance accessibility, and solve problems that matter in 
+        the short run. I prefer research that's grounded in something tangible—work 
+        that creates measurable impact rather than just theoretical exploration.
       </p>
 
       <p>
-        I'm always interested in connecting with others working on similar problems, 
-        whether in academia, government, or the private sector. Feel free to reach 
-        out if you'd like to discuss ideas or potential collaborations.
+        This philosophy extends to my writing. I've written for Deccan Herald with 
+        my professor about education policy, and contributed to Kashmir Poetics, 
+        a Kashmir-based magazine. Writing helps me think more clearly about complex 
+        problems and communicate technical ideas to broader audiences.
+      </p>
+
+      <h2>Academic & Extracurricular</h2>
+
+      <p>
+        At FLAME, I'm a member of the Dot Slash Club, our university's coding team 
+        focused on programming and hackathons. Before university, I attended Jawahar 
+        Navodaya Vidyalaya in Kashmir on a merit scholarship, where I served as 
+        Extracurricular Head and coordinated the Atal Tinkering Labs, teaching 3D 
+        printing to juniors.
+      </p>
+
+      <h2>Beyond Academics</h2>
+
+      <p>
+        When I'm not coding or writing, you'll find me on the badminton court or 
+        in debate competitions. I'm also an avid reader interested in philosophy, 
+        public policy, and the intersection of technology with society.
+      </p>
+
+      <p>
+        Photography teaches me to see the world differently, while debate sharpens 
+        my ability to construct and defend arguments—skills that translate well 
+        into everything else I do.
       </p>
     </section>
   );
