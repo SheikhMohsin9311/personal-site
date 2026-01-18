@@ -20,17 +20,17 @@ export default function Contact() {
         <div>
           <p className="text-sm font-medium text-slate-600 mb-1">Email</p>
           <a 
-            href="mailto:sheikh.mohsin@example.com" 
+            href="mailto:sheikhmohsin9311@gmail.com" 
             className="text-blue-600 hover:text-blue-700 transition-colors"
           >
-            sheikh.mohsin@example.com
+            sheikmohsin9311@gmail.com
           </a>
         </div>
 
         <div>
           <p className="text-sm font-medium text-slate-600 mb-1">LinkedIn</p>
           <a 
-            href="https://linkedin.com/in/sheikh-mohsin" 
+            href="https://www.linkedin.com/in/sheikh-mohsin-213653254/" 
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-700 transition-colors"
@@ -42,7 +42,7 @@ export default function Contact() {
         <div>
           <p className="text-sm font-medium text-slate-600 mb-1">GitHub</p>
           <a 
-            href="https://github.com/sheikmohsin" 
+            href="https://github.com/SheikhMohsin9311" 
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-700 transition-colors"
