@@ -15,12 +15,13 @@ export default function RootLayout({
       <body>
         <header className="site-header">
           <nav className="nav">
-            <a href="/" className="brand">Sheikh Mohsin</a>
+            <a href="/" className="brand">The Scholar</a>
             <div className="nav-links">
+              <a href="/">Prologue</a>
               <a href="/about">About</a>
-              <a href="/experience">Experience</a>
-              <a href="/writing">Writing</a>
-              <a href="/contact">Contact</a>
+              <a href="/experience">Expertise</a>
+              <a href="/writing">Works</a>
+              <a href="/contact">Correspond</a>
             </div>
           </nav>
         </header>
