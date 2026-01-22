@@ -236,8 +236,11 @@ body {
   margin-bottom: 2.5rem;
   display: inline-block;
   padding: 0.6rem 1.2rem;
-  border: 1px solid rgba(201, 168, 112, 0.3);
+  border: 1px solid rgba(201, 168, 112, 0.4);
+  background: linear-gradient(135deg, rgba(201, 168, 112, 0.1) 0%, rgba(139, 92, 46, 0.05) 100%);
   position: relative;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 .welcome-label::before,
@@ -258,6 +261,13 @@ body {
 .welcome-label::after {
   bottom: -2px;
   right: -2px;
+}
+
+.welcome-label:hover {
+  border-color: rgba(201, 168, 112, 0.6);
+  background: linear-gradient(135deg, rgba(201, 168, 112, 0.15) 0%, rgba(139, 92, 46, 0.1) 100%);
+  box-shadow: 0 4px 16px rgba(201, 168, 112, 0.2);
+  transform: translateY(-2px);
 }
 
 .hero-heading {
@@ -513,9 +523,9 @@ body {
 
 .quote-block {
   margin: 0 auto 3rem;
-  padding: 0;
-  border: none;
-  background: transparent;
+  padding: 2rem 2.5rem;
+  border: 1px solid rgba(201, 168, 112, 0.25);
+  background: linear-gradient(135deg, rgba(201, 168, 112, 0.08) 0%, rgba(139, 92, 46, 0.05) 100%);
   font-family: 'Libre Baskerville', serif;
   font-style: italic;
   font-size: 1.25rem;
@@ -523,6 +533,9 @@ body {
   line-height: 1.8;
   position: relative;
   max-width: 700px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 .quote-block::before {
@@ -531,9 +544,15 @@ body {
   left: -1.5rem;
   top: -0.5rem;
   font-size: 3rem;
-  color: rgba(201, 168, 112, 0.4);
+  color: rgba(201, 168, 112, 0.5);
   font-family: 'Libre Baskerville', serif;
   line-height: 1;
+}
+
+.quote-block:hover {
+  border-color: rgba(201, 168, 112, 0.4);
+  background: linear-gradient(135deg, rgba(201, 168, 112, 0.12) 0%, rgba(139, 92, 46, 0.08) 100%);
+  box-shadow: 0 8px 24px rgba(201, 168, 112, 0.15);
 }
 
 .quote-author {
@@ -686,4 +705,229 @@ p {
 ::selection {
   background: rgba(201, 168, 112, 0.25);
   color: #e8e6e3;
+}
+
+/* ===============================
+   Golden Theme Boxes
+   =============================== */
+
+.golden-box {
+  background: linear-gradient(135deg, rgba(201, 168, 112, 0.08) 0%, rgba(139, 92, 46, 0.05) 100%);
+  border: 1px solid rgba(201, 168, 112, 0.3);
+  border-radius: 4px;
+  padding: 1.5rem 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.golden-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 4px;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(201, 168, 112, 0.4), rgba(184, 151, 96, 0.2), rgba(201, 168, 112, 0.4));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.golden-box:hover {
+  border-color: rgba(201, 168, 112, 0.5);
+  background: linear-gradient(135deg, rgba(201, 168, 112, 0.12) 0%, rgba(139, 92, 46, 0.08) 100%);
+  box-shadow: 0 8px 24px rgba(201, 168, 112, 0.15), 0 0 0 1px rgba(201, 168, 112, 0.2);
+  transform: translateY(-2px);
+}
+
+.golden-box:hover::before {
+  opacity: 1;
+}
+
+.golden-box-header {
+  color: #c9a870;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+.golden-box-content {
+  color: rgba(232, 230, 227, 0.85);
+  line-height: 1.7;
+}
+
+.golden-box-accent {
+  position: absolute;
+  width: 3px;
+  height: 40%;
+  background: linear-gradient(180deg, #c9a870, rgba(201, 168, 112, 0.3));
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 0 2px 2px 0;
+}
+
+.golden-card {
+  background: linear-gradient(135deg, rgba(201, 168, 112, 0.1) 0%, rgba(139, 92, 46, 0.06) 100%);
+  border: 1px solid rgba(201, 168, 112, 0.25);
+  border-radius: 6px;
+  padding: 2rem;
+  position: relative;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.golden-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(201, 168, 112, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.golden-card:hover {
+  border-color: rgba(201, 168, 112, 0.5);
+  background: linear-gradient(135deg, rgba(201, 168, 112, 0.15) 0%, rgba(139, 92, 46, 0.1) 100%);
+  box-shadow: 
+    0 12px 32px rgba(201, 168, 112, 0.2),
+    0 0 0 1px rgba(201, 168, 112, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transform: translateY(-4px);
+}
+
+.golden-card:hover::after {
+  opacity: 1;
+}
+
+.golden-card-title {
+  color: #c9a870;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.golden-card-subtitle {
+  color: rgba(201, 168, 112, 0.7);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.golden-card-text {
+  color: rgba(232, 230, 227, 0.8);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.golden-badge {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  background: rgba(201, 168, 112, 0.15);
+  border: 1px solid rgba(201, 168, 112, 0.3);
+  color: #c9a870;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.golden-badge:hover {
+  background: rgba(201, 168, 112, 0.25);
+  border-color: rgba(201, 168, 112, 0.5);
+  box-shadow: 0 4px 12px rgba(201, 168, 112, 0.2);
+}
+
+/* Golden-themed experience boxes */
+.experience-box {
+  background: linear-gradient(135deg, rgba(201, 168, 112, 0.08) 0%, rgba(139, 92, 46, 0.05) 100%);
+  border: 1px solid rgba(201, 168, 112, 0.25);
+  border-left: 3px solid #c9a870;
+  border-radius: 4px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  backdrop-filter: blur(10px);
+}
+
+.experience-box:hover {
+  border-color: rgba(201, 168, 112, 0.4);
+  background: linear-gradient(135deg, rgba(201, 168, 112, 0.12) 0%, rgba(139, 92, 46, 0.08) 100%);
+  box-shadow: 0 8px 24px rgba(201, 168, 112, 0.15);
+  transform: translateX(4px);
+}
+
+.experience-box h2 {
+  color: #c9a870;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.experience-box p {
+  color: rgba(232, 230, 227, 0.8);
+}
+
+/* Golden-themed article boxes */
+.article-box {
+  background: linear-gradient(135deg, rgba(201, 168, 112, 0.06) 0%, rgba(139, 92, 46, 0.03) 100%);
+  border: 1px solid rgba(201, 168, 112, 0.2);
+  border-bottom: 1px solid rgba(201, 168, 112, 0.3);
+  border-radius: 4px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.article-box:hover {
+  border-color: rgba(201, 168, 112, 0.4);
+  background: linear-gradient(135deg, rgba(201, 168, 112, 0.1) 0%, rgba(139, 92, 46, 0.06) 100%);
+  box-shadow: 0 8px 24px rgba(201, 168, 112, 0.12);
+  transform: translateY(-2px);
+}
+
+.article-box h2 a {
+  color: #c9a870;
+  transition: color 0.3s ease;
+}
+
+.article-box h2 a:hover {
+  color: #d4b882;
+}
+
+/* Responsive adjustments for golden boxes */
+@media (max-width: 768px) {
+  .golden-box,
+  .golden-card,
+  .experience-box,
+  .article-box {
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .golden-card-title {
+    font-size: 1.25rem;
+  }
+  
+  .quote-block {
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+  }
 }

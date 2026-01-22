@@ -46,9 +46,9 @@ export default function Writing() {
 
       <div className="space-y-8">
         {posts.map((post) => (
-          <article key={post.slug} className="border-b border-slate-700 pb-6 last:border-0">
+          <article key={post.slug} className="article-box">
             <h2 className="text-xl font-medium mb-2">
-              <a href={`/writing/${post.slug}`} className="hover:text-pink-400 transition-colors">
+              <a href={`/writing/${post.slug}`} className="transition-colors">
                 {post.title}
               </a>
             </h2>
@@ -63,7 +63,7 @@ export default function Writing() {
               {post.publication && (
                 <>
                   <span className="text-slate-600">·</span>
-                  <span className="text-sm text-violet-400">{post.publication}</span>
+                  <span className="text-sm golden-badge">{post.publication}</span>
                 </>
               )}
             </div>

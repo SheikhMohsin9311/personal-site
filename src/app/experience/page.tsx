@@ -10,8 +10,8 @@ export default function Experience() {
       </p>
 
       <div className="mt-12 space-y-10">
-        <div>
-          <h2 className="text-lg font-medium text-violet-300">QA Testing Intern</h2>
+        <div className="experience-box">
+          <h2 className="text-lg font-medium">QA Testing Intern</h2>
           <p className="text-sm text-slate-400 mt-1">PartyHub · Remote · July 2025 - August 2025</p>
           <p className="mt-3">
             Conducted manual testing of user-facing and backend systems to ensure 
@@ -24,8 +24,8 @@ export default function Experience() {
           </p>
         </div>
 
-        <div>
-          <h2 className="text-lg font-medium text-violet-300">Research and Operations Intern</h2>
+        <div className="experience-box">
+          <h2 className="text-lg font-medium">Research and Operations Intern</h2>
           <p className="text-sm text-slate-400 mt-1">Goonj · Delhi · May 2025 - June 2025</p>
           <p className="mt-3">
             Worked with Goonj, a non-profit addressing issues of surplus and shortage 
@@ -40,8 +40,8 @@ export default function Experience() {
           </p>
         </div>
 
-        <div>
-          <h2 className="text-lg font-medium text-violet-300">Writer & Contributor</h2>
+        <div className="experience-box">
+          <h2 className="text-lg font-medium">Writer & Contributor</h2>
           <p className="text-sm text-slate-400 mt-1">Various Publications</p>
           <p className="mt-3">
             Written for Deccan Herald with my professor about education policy, 
@@ -51,8 +51,8 @@ export default function Experience() {
           </p>
         </div>
 
-        <div>
-          <h2 className="text-lg font-medium text-violet-300">Atal Tinkering Labs Coordinator</h2>
+        <div className="experience-box">
+          <h2 className="text-lg font-medium">Atal Tinkering Labs Coordinator</h2>
           <p className="text-sm text-slate-400 mt-1">Jawahar Navodaya Vidyalaya · Kashmir</p>
           <p className="mt-3">
             Taught 3D printing and basic fabrication to junior students, helping 
