@@ -32,7 +32,7 @@ export default function RootLayout({
                 { label: 'About', path: '/about' },
                 { label: 'Expertise', path: '/experience' },
                 { label: 'Works', path: '/writing' },
-                { label: 'Correspond', path: '/contact' }
+                { label: 'Correspond', path: '/correspond' }
               ].map((item, index) => (
                 <a
                   key={index}
