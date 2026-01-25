@@ -27,19 +27,22 @@ export default function RootLayout({
             </a>
 
             <div className="flex gap-8 items-center">
-              {['Prologue', 'About', 'Expertise', 'Works', 'Correspond'].map((item, index) => {
-                const href = item === 'Prologue' ? '/' : `/${item.toLowerCase()}`;
-                return (
-                  <a
-                    key={index}
-                    href={href}
-                    className="font-sans text-xs uppercase tracking-widest text-gray-400/80 hover:text-gold-500 transition-all relative group"
-                  >
-                    {item}
-                    <span className="absolute -bottom-1 left-0 w-0 h-px bg-gold-500 transition-all duration-300 group-hover:w-full"></span>
-                  </a>
-                )
-              })}
+              {[
+                { label: 'Prologue', path: '/' },
+                { label: 'About', path: '/about' },
+                { label: 'Expertise', path: '/experience' },
+                { label: 'Works', path: '/writing' },
+                { label: 'Correspond', path: '/contact' }
+              ].map((item, index) => (
+                <a
+                  key={index}
+                  href={item.path}
+                  className="font-sans text-xs uppercase tracking-widest text-gray-400/80 hover:text-gold-500 transition-all relative group"
+                >
+                  {item.label}
+                  <span className="absolute -bottom-1 left-0 w-0 h-px bg-gold-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              ))}
             </div>
           </nav>
         </header>
